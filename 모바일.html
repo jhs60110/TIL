@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    *{
+      color: blue;
+    }
+      #jb-container {
+        width: 940px;
+        margin: 10px auto;
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-header {
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-content {
+        width: 580px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: left;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-sidebar {
+        width: 260px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: right;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-footer {
+        clear: both;
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      @media ( max-width: 480px ) {
+        #jb-container {
+          width: auto;
+        }
+        #jb-content {
+          float: none;
+          width: auto;
+        }
+        #jb-sidebar {
+          float: none;
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="jb-container">
+      <div id="jb-header">
+        <h1> <img src="https://img7.yna.co.kr/etc/inner/KR/2019/11/04/AKR20191104077600004_02_i_P2.gif" alt="logo" height="100" width="100"style=""margin-left: auto; margin-right: auto; display: block;"/>
+명지대 신입생 가이드</h1>
+      </div>
+      <div id="jb-content">
+        <h2>명지대 기본 정보</h2>
+        <p>Hi</p>
+        <ul>
+          <li><a href="file:///C:/Users/jhs60/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/%EB%AA%85%EC%A7%80%EC%9B%B9/%EC%88%98%EA%B0%95%EC%8B%A0%EC%B2%AD.html">수강신청</a></li>
+          <li>캠퍼스 지도</li>
+          <li>성적 관련</li>
+          <li>전과,복수전공</li>
+          <li>anoter info</li>
+        </ul>
+      </div>
+      <div id="jb-sidebar">
+        <h2>바로가기</h2>
+        <ul>
+          <li><a href = "https://www.mju.ac.kr/mjukr/index.do"> 명지대 </a></li>
+          <li><a href="http://lms.mju.ac.kr/ilos/main/main_form.acl">LMS</a></li>
+          <li><a href = "http://home.mju.ac.kr/user/index.action?SWIFT_SESSION_CHK=false">eclass </a></li>
+          <li><a href = "https://lib.mju.ac.kr/index.ax">도서관</a></li>
+        </ul>
+      </div>
+      <div id="jb-footer">
+        <p>잘못된 정보 신고, 질문글 올리는거</p>
+      </div>
+    </div>
+  </body>
+</html>
