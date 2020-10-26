@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+  #jb-container {
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #bcbcbc;
+  }
+  #jb-header {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #bcbcbc;
+  }
+  #jb-content {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #bcbcbc;
+  }
+  #jb-sidebar {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #bcbcbc;
+  }
+  #jb-footer {
+    padding: 20px;
+    border: 1px solid #bcbcbc;
+  }
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    #jb-container {
+      width: 940px;
+    }
+    #jb-content {
+      width: 580px;
+      float: left;
+    }
+    #jb-sidebar {
+      width: 260px;
+      float: right;
+    }
+    #jb-footer {
+      clear: both;
+    }}
+
+</style>
+</head>
+  <body>
+    <div class="side_wrap fixed">
+      <div class="search_side">
+        <div class="box">
+          <form name="" id="searchBarForm" action="search.html" enctype="multipart/form-data" method="get" target="_self">
+            <input name="keyword" class="inputTypeText" id="keyword" onmousedown="SEARCH_BANNER.clickSearchForm(this)" onkeyup="SEARCH_HASHTAG.getHashtag($(this)); " type="text" placeholder="" value="" autocomplete="off" fw-msg="" fw-label="검색어" fw-filter="">
+            <input class="search_submit" onclick="SEARCH_BANNER.submitSearchBanner(this); return false;" type="submit" value="검색">
+            <input name="sort_method" type="hidden" value="5">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
